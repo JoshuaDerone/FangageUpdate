@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="loader order-layout">
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fangage</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+  <!-- include jQuery library -->
+  <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" defer></script>
+  <!-- include custom JavaScript -->
+  <script src="js/jquery.main.js" defer></script>
+</head>
+<!-- To make visible or active some elements in main navigation, class .LOGIN should be added to the <BODY> element. -->
+<body class="header-collapsed has-bg">
+  <!-- main container of all the page elements -->
+  <div class="wrapper">
+    <!-- header of the page -->
+    <header id="header-order">
+      <nav class="navbar navbar-light bg-light">
+        <!-- page logo -->
+        <a class="navbar-brand" href="#" style="background-image: url(images/logo-2x.png);"><img src="images/logo-2x.png" alt="Fangage" class="img-fluid"></a>
+        <div class="signed-block d-flex align-items-center">
+          <div class="img-holder mr-3">
+            <!-- picturefill: full manual control -->
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="images/img-order-header01.jpg, images/img-order-header01-2x.jpg 2x">
+              <!--[if IE 9]></video><![endif]-->
+              <img src="img-order-header01.jpg" class="img-fluid" alt="image description">
+            </picture>
+          </div>
+          <strong class="title">Get your photo signed by Ronaldo / <span class="price">$15</span></strong>
+        </div>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </nav>
+    </header>
+    <!-- contain main informative part of the site -->
+    <main id="main">
+      <div class="container-fluid container-xs py-5 py-lg-7">
+        <form action="#">
+          <!-- order steps -->
+          <!-- step 01 upload -->
+          <div class="card-forms card rounded-0 mb-3">
+            <div class="card-body p-md-5 p-lg-6">
+              <small class="d-block text-secondary text-uppercase mb-2"><b>Step 1 of 3</b></small>
+              <h1 class="h4 mb-lg-4">Upload your photo</h1>
+              <!-- upload box -->
+              <div class="upload-box border mb-2">
+                <div class="box-holder mb-1">
+                  <div class="custom-file custom-upload">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label p-0 border-0" for="customFile">
+                      <span class="btn-upload btn btn-outline-dark btn-circle mb-2">&nbsp;<i class="icon-arrow-up"></i></span>
+                      <small class="upload-text d-block text-uppercase mx-auto"><b>Browse or Drag &amp; Drop your photo here</b></small>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-top-0 d-flex align-items-center justify-content-end pr-0">
+              <a href="#" data-toggle="modal" data-target="#modalCancel"><b>Cancel</b></a>
+              <button type="submit" class="btn-arrow-right btn btn-secondary text-uppercase ml-2"><b>Next</b> <i class="icon-arrow-right">&nbsp;</i></button>
+            </div>
+          </div>
+          <!-- uploaded state of order -->
+          <div class="uploaded">
+            <div class="card-forms card rounded-0 mb-3">
+              <div class="card-body p-md-5 p-lg-6">
+                <small class="d-block text-secondary text-uppercase mb-2"><b>Step 1 of 3</b></small>
+                <h1 class="h4 mb-lg-4">Upload your photo</h1>
+                <!-- upload box -->
+                <div class="upload-section">
+                  <div class="upload-box border mb-2">
+                    <div class="box-holder mb-1">
+                      <input type="file" class="btn-upload btn btn-outline-dark btn-circle mb-2">&nbsp;<i class="icon-arrow-up"></i>
+                      <small class="upload-text d-block text-uppercase"><b>Browse or Drag &amp; Drop your photo here</b></small>
+                    </div>
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/img-uploaded01-small.jpg, images/img-uploaded01-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/img-uploaded01-large.jpg, images/img-uploaded01-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="img-uploaded01-large.jpg" class="img-fluid" alt="image description">
+                    </picture>
+                  </div>
+                  <a href="#" class="link-delete text-danger d-inline-block align-middle"><b><span class="close"><span aria-hidden="true">&times;</span></span>Delete Photo</b></a>
+                </div>
+              </div>
+              <div class="card-footer border-top-0 d-flex align-items-center justify-content-end pr-0">
+                <a href="#" data-toggle="modal" data-target="#modalCancel"><b>Cancel</b></a>
+                <button type="submit" class="btn-arrow-right btn btn-secondary text-uppercase ml-2"><b>Next</b> <i class="icon-arrow-right">&nbsp;</i></button>
+              </div>
+            </div>
+          </div>
+          <!-- step 02 customize message -->
+          <div class="card-forms card rounded-0 mb-3">
+            <div class="card-body p-md-5 p-lg-6">
+              <small class="d-block text-secondary text-uppercase mb-2"><b>Step 2 of 3</b></small>
+              <h1 class="h4 mb-lg-4">Customize your message</h1>
+              <textarea class="form-control" rows="6" cols="50" placeholder="Enter your custom message..." aria-describedby="customMessage01"></textarea>
+              <small id="customMessage01" class="form-text text-muted">140 Characters</small>
+            </div>
+            <div class="card-footer border-top-0 d-flex align-items-center justify-content-end pr-0">
+              <ul class="links-list list-inline mb-0">
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modalCancel"><b>Cancel</b></a> <span class="separator">|</span></li>
+                <li class="list-inline-item"><a href="#"><b>Back</b></a> <span class="separator">|</span></li>
+                <li class="list-inline-item"><a href="#"><b>Skip</b></a></li>
+              </ul>
+              <button type="submit" class="btn-arrow-right btn btn-secondary text-uppercase ml-2"><b>Next</b> <i class="icon-arrow-right">&nbsp;</i></button>
+            </div>
+          </div>
+          <!-- step 02 customize message filled -->
+          <div class="card-forms form-filled card rounded-0 mb-3">
+            <div class="card-body p-md-5 p-lg-6">
+              <small class="d-block text-secondary text-uppercase mb-2"><b>Step 2 of 3</b></small>
+              <h1 class="h4 mb-lg-4">Customize your message</h1>
+              <textarea class="form-control" rows="6" cols="50" aria-describedby="customMessage02">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</textarea>
+              <small id="customMessage02" class="form-text text-muted">32 Characters</small>
+            </div>
+            <div class="card-footer border-top-0 d-flex align-items-center justify-content-end pr-0">
+              <ul class="links-list list-inline mb-0">
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modalCancel"><b>Cancel</b></a> <span class="separator">|</span></li>
+                <li class="list-inline-item"><a href="#"><b>Back</b></a> <span class="separator">|</span></li>
+                <li class="list-inline-item"><a href="#"><b>Skip</b></a></li>
+              </ul>
+              <button type="submit" class="btn-arrow-right btn btn-secondary text-uppercase ml-2"><b>Next</b> <i class="icon-arrow-right">&nbsp;</i></button>
+            </div>
+          </div>
+          <!-- step 03 Add payment method -->
+          <div class="card-forms card rounded-0 mb-3">
+            <div class="card-body p-md-5 p-lg-6">
+              <small class="d-block text-secondary text-uppercase mb-2"><b>Step 3 of 3</b></small>
+              <h1 class="h4 mb-lg-4">Add payment method</h1>
+              <div class="form-group">
+                <div class="form-control-wrap">
+                  <input type="tel" class="form-control" placeholder="Enter your card number" required>
+                  <div class="add-info">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/payment-visa.png, images/payment-visa-2x.png 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="payment-visa.png" class="img-fluid" alt="image description">
+                    </picture>
+                  </div>
+                </div>
+                <div class="invalid-feedback">
+                  Must be at least 6 characters long
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <div class="form-control-wrap">
+                    <input type="text" class="form-control" placeholder="Exp Date" required>
+                    <div class="add-info">
+                      Exp
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <div class="form-control-wrap">
+                    <input type="tel" class="form-control" placeholder="CVC" required>
+                    <div class="add-info">
+                      CVC
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-top-0 d-flex align-items-center justify-content-end pr-0">
+              <ul class="links-list list-inline mb-0">
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modalCancel"><b>Cancel</b></a> <span class="separator">|</span></li>
+                <li class="list-inline-item"><a href="#"><b>Back</b></a></li>
+              </ul>
+              <button type="submit" class="btn-arrow-right btn btn-secondary text-uppercase ml-2"><b>Review Order</b> <i class="icon-arrow-right">&nbsp;</i></button>
+            </div>
+          </div>
+          <!-- step 03 Payment filled -->
+          <div class="card-forms payment-filled card rounded-0 mb-3">
+            <div class="card-body p-md-5 p-lg-6">
+              <small class="d-block text-secondary text-uppercase mb-2"><b>Step 3 of 3</b></small>
+              <h1 class="h4 mb-lg-4">Add payment method</h1>
+              <div class="form-group">
+                <div class="form-control-wrap">
+                  <input type="tel" class="form-control" value="1234 1234 1234 1234" required>
+                  <div class="add-info">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/payment-visa.png, images/payment-visa-2x.png 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="payment-visa.png" class="img-fluid" alt="image description">
+                    </picture>
+                  </div>
+                </div>
+                <div class="invalid-feedback">
+                  Must be at least 6 characters long
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <div class="form-control-wrap">
+                    <input type="text" class="form-control" value="11 / 17" required>
+                    <div class="add-info">
+                      Exp
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <div class="form-control-wrap">
+                    <input type="tel" class="form-control" value="098" required>
+                    <div class="add-info">
+                      CVC
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-top-0 d-flex align-items-center justify-content-end pr-0">
+              <ul class="links-list list-inline mb-0">
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modalCancel"><b>Cancel</b></a> <span class="separator">|</span></li>
+                <li class="list-inline-item"><a href="#"><b>Back</b></a></li>
+              </ul>
+              <button type="submit" class="btn-arrow-right btn btn-secondary text-uppercase ml-2"><b>Review Order</b> <i class="icon-arrow-right">&nbsp;</i></button>
+            </div>
+          </div>
+          <!-- step REVIEW ORDER -->
+          <div class="card-forms form-filled card rounded-0 mb-3">
+            <div class="card-body p-md-5 p-lg-6">
+              <small class="d-block text-secondary text-uppercase mb-2"><b>Review order</b></small>
+              <h1 class="h4 mb-lg-3">Your photo &amp; message</h1>
+              <div class="row-title row justify-content-between pb-3 mb-1">
+                <div class="col">
+                  <p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque to rem laudantium</p>
+                  <p><a href="#" class="text-uppercase"><b>Change</b></a></p>
+                </div>
+                <div class="img-holder col-auto">
+                  <!-- picturefill: full manual control -->
+                  <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source srcset="images/img-order02.jpg, images/img-order02-2x.jpg 2x">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img src="img-order02.jpg" class="img-fluid rounded-circle" alt="image description">
+                  </picture>
+                </div>
+              </div>
+              <div class="order-block border-top py-3">
+                <small class="d-block text-secondary text-uppercase mb-2"><b>Payment</b></small>
+                <div class="row justify-content-between pb-1">
+                  <div class="col">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/payment-visa.png, images/payment-visa-2x.png 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="payment-visa.png" class="img-fluid" alt="image description">
+                    </picture>
+                    <b class="payment-text">Visa ...6803  Exp 11 / 2016</b>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#" class="text-uppercase"><b>Change</b></a>
+                  </div>
+                </div>
+              </div>
+              <div class="order-block border-top py-2">
+                <div class="order-frame border-bottom pt-2 pb-3">
+                  <small class="d-block text-secondary text-uppercase mb-1"><b>Summary</b></small>
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <b>Signed Photo</b>
+                    </div>
+                    <div class="col-auto">
+                      <b>$15<sup>.00</sup></b>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-frame border-bottom pt-2 pb-3">
+                  <div class="row justify-content-between text-secondary pt-1">
+                    <div class="col">
+                      <b>Subtotal</b>
+                    </div>
+                    <div class="col-auto">
+                      <b>$15<sup>.00</sup></b>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between text-secondary">
+                    <div class="col">
+                      <b>Tax</b>
+                    </div>
+                    <div class="col-auto">
+                      <b>$2<sup>.92</sup></b>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-frame border-bottom py-2 mb-3">
+                  <div class="row justify-content-between py-1">
+                    <div class="col">
+                      <b class="text-uppercase">Total</b>
+                    </div>
+                    <div class="col-auto">
+                      <b>$17<sup>.00</sup></b>
+                    </div>
+                  </div>
+                </div>
+                <small class="d-block">By placing an order Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</small>
+              </div>
+            </div>
+            <div class="card-footer border-top-0 d-flex align-items-center justify-content-end pr-0">
+              <ul class="links-list list-inline mb-0">
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modalCancel"><b>Cancel</b></a> <span class="separator">|</span></li>
+                <li class="list-inline-item"><a href="#"><b>Back</b></a></li>
+              </ul>
+              <button type="submit" class="btn-arrow-right btn btn-secondary text-uppercase ml-2"><b>Place Order</b> <i class="icon-arrow-right">&nbsp;</i></button>
+            </div>
+          </div>
+          <!-- step THANK YOU -->
+          <div class="card-forms card rounded-0 mb-3">
+            <div class="card-body p-md-5 p-lg-6">
+              <small class="d-block text-secondary text-uppercase mb-2"><b>Thank you</b></small>
+              <h1 class="h4 text-capitalize mb-lg-4">Your order has been placed</h1>
+              <p>You will receive an email once your photo is signed. It takes approximately 3-5 business days.</p>
+              <p>If you have any questions, contact us at <a href="#">help@fangage.com</a></p>
+            </div>
+            <div class="card-footer border-top-0 d-flex align-items-center justify-content-end pr-0">
+              <a href="#"><b>Go to Home</b></a>
+              <button type="submit" class="btn-arrow-right btn btn-dark text-uppercase ml-2"><b>Get another photo signed</b> <i class="icon-arrow-right">&nbsp;</i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+  <!-- Modals -->
+  <!-- Modal accepting cancel -->
+  <div class="modal fade" id="modalCancel" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content rounded-0">
+        <div class="modal-body">
+          <strong class="h4">Are you sure you want to cancel?</strong>
+          <p>You will lose all the information you have entered for this order.</p>
+        </div>
+        <div class="modal-footer pr-0">
+          <a href="#" data-dismiss="modal" class="text-uppercase"><b>Continue with your order</b></a>
+          <button type="button" class="btn btn-danger text-uppercase ml-2"><b>Confirm</b></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
