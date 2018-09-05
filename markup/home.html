@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fangage</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+  <!-- include jQuery library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" defer></script>
+  <!-- include custom JavaScript -->
+  <script src="js/jquery.main.js" defer></script>
+</head>
+<!-- To make visible or active some elements in main navigation, class .LOGIN should be added to the <BODY> element. -->
+<body class="login search-holder no-cover">
+  <!-- main container of all the page elements -->
+  <div class="wrapper">
+    <div class="wrap">
+      <div class="navbar navbar-light navbar-push">
+        <div class="navbar-scroll">
+          <div class="collapse navbar-collapse">
+            <a href="#" class="nav-opener text-uppercase d-flex align-items-center" aria-label="Close"><b>Close</b> <i class="ico-close" aria-hidden="true">&nbsp;</i></a>
+            <!-- main navigation of the page -->
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><b>Home</b> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><b>Celebrities &amp; Events</b></a>
+              </li>
+            </ul>
+            <!-- To make the NAVBAR-NAV VISIBLE-LOGIN active, class .LOGIN should be added to the <BODY> element. -->
+            <ul class="navbar-nav visible-login">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-block" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <b>Settings</b>
+                </a>
+                <div class="dropdown-frame">
+                  <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><b>Order History</b></a>
+                    <a class="dropdown-item" href="#"><b>My Account</b></a>
+                    <a class="dropdown-item" href="#"><b>Notifications</b></a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalSignOut"><b>Sign Out</b></a>
+              </li>
+            </ul>
+            <!-- To make the BUTTONS-BLOCK INVISIBLE-LOGIN ivisible, class .LOGIN should be added to the <BODY> element. -->
+            <div class="buttons-block invisible-login">
+              <a href="#" class="btn-arrow-right btn btn-block btn-danger">Create Account <i class="icon-arrow-right">&nbsp;</i></a>
+              <a href="#" class="btn-arrow-right btn btn-block btn-dark">Sign in <i class="icon-arrow-right">&nbsp;</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-hold">
+        <!-- header of the page -->
+        <header id="header">
+          <!-- alert message -->
+          <div class="alert alert-dark alert-dismissible position-absolute text-center fade show border-0 mb-0" role="alert">
+            Your password has been successfully changed <a href="#">Sign In</a>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <nav class="navbar navbar-light bg-light">
+            <div class="navbar-block d-flex align-items-center">
+              <button class="nav-opener navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+               <!-- autocomplete structure -->
+              <div class="search-block d-flex align-items-center">
+                <div class="input-holder">
+                  <label for="search-focus" class="search-label mb-0">
+                    <i class="icon-search">&nbsp;</i>
+                    <strong class="placeholder-fake text-uppercase">Search <span class="invisible-fixed">celebrities or events</span></strong>
+                  </label>
+                  <input type="search" id="search-focus" class="form-control autocomplete border-0 p-0" placeholder="Enter celebrity or event name">
+                </div>
+              </div>
+            </div>
+            <!-- page logo -->
+            <a class="navbar-brand" href="#" style="background-image: url(images/logo-2x.png);"><img src="images/logo-2x.png" alt="Fangage" class="img-fluid"></a>
+            <a href="#" class="btn-arrow-right btn btn-danger">Get your photo signed <i class="icon-arrow-right">&nbsp;</i></a>
+          </nav>
+        </header>
+        <!-- contain main informative part of the site -->
+        <main id="main">
+          <div class="container-fluid">
+            <!-- trending section -->
+            <div class="trending-section d-md-flex align-items-baseline justify-content-between py-4 pt-lg-6 pb-lg-1">
+              <div class="dropdown mb-4 text-center text-md-left">
+                <a href="#" class="dropdown-toggle text-uppercase" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <b>Trending now</b>
+                </a>
+                <div class="dropdown-menu text-uppercase" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><b>Featured</b></a>
+                  <a class="dropdown-item" href="#"><b>Recommended</b></a>
+                  <a class="dropdown-item" href="#"><b>Trending Now</b></a>
+                  <a class="dropdown-item" href="#"><b>Popular</b></a>
+                  <a class="dropdown-item" href="#"><b>Special Events</b></a>
+                  <a class="dropdown-item" href="#"><b>Upcoming</b></a>
+                </div>
+              </div>
+              <div class="card-deck trending-deck align-items-center justify-content-center mb-4">
+                <div class="card border-0">
+                  <div class="img-holder mb-1 mx-auto">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/trend01-small.jpg, images/trend01-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/trend01-large.jpg, images/trend01-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="trend01-large.jpg" class="img-fluid img-circle" alt="image description">
+                    </picture>
+                    <span class="badge badge-danger text-uppercase">Live</span>
+                  </div>
+                  <div class="card-body p-0 text-center">
+                    <h5 class="card-title">Denver Broncos</h5>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <div class="img-holder mb-1 mx-auto">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/trend02-small.jpg, images/trend02-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/trend02-large.jpg, images/trend02-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="trend02-large.jpg" class="img-fluid img-circle" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="card-body p-0 text-center">
+                    <h5 class="card-title">James</h5>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <div class="img-holder mb-1 mx-auto">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/trend03-small.jpg, images/trend03-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/trend03-large.jpg, images/trend03-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="trend03-large.jpg" class="img-fluid img-circle" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="card-body p-0 text-center">
+                    <h5 class="card-title">Baby Driver</h5>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <div class="img-holder mb-1 mx-auto">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/trend04-small.jpg, images/trend04-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/trend04-large.jpg, images/trend04-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="trend04-large.jpg" class="img-fluid img-circle" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="card-body p-0 text-center">
+                    <h5 class="card-title">Mickelson</h5>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <div class="img-holder mb-1 mx-auto">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/trend05-small.jpg, images/trend05-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/trend05-large.jpg, images/trend05-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="trend05-large.jpg" class="img-fluid img-circle" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="card-body p-0 text-center">
+                    <h5 class="card-title">McGregor</h5>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <div class="img-holder mb-1 mx-auto">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/trend06-small.jpg, images/trend06-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/trend06-large.jpg, images/trend06-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="trend06-large.jpg" class="img-fluid img-circle" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="card-body p-0 text-center">
+                    <h5 class="card-title">Durant</h5>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <div class="img-holder mb-1 mx-auto">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/trend07-small.jpg, images/trend07-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/trend07-large.jpg, images/trend07-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="trend07-large.jpg" class="img-fluid img-circle" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="card-body p-0 text-center">
+                    <h5 class="card-title">Djokovic</h5>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <div class="img-holder mb-1 mx-auto">
+                    <!-- picturefill: full manual control -->
+                    <picture>
+                      <!--[if IE 9]><video style="display: none;"><![endif]-->
+                      <source srcset="images/trend08-small.jpg, images/trend08-small-2x.jpg 2x" media="(max-width: 767px)">
+                      <source srcset="images/trend08-large.jpg, images/trend08-large-2x.jpg 2x">
+                      <!--[if IE 9]></video><![endif]-->
+                      <img src="trend08-large.jpg" class="img-fluid img-circle" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="card-body p-0 text-center">
+                    <h5 class="card-title">Rousey</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="link-block mb-4 text-uppercase text-center text-md-right"><a href="#"><b>View All</b></a></div>
+            </div>
+          </div>
+          <!-- The LOAD MORE section. JavaScript functionality may will add. In order to display the a.LOAD-MORE button delete class .INVISIBLE from from it's parent container (which located at the bottom of section) -->
+          <div class="photos-section load-more-section pb-5 pb-lg-7">
+            <div class="new-content-target card-group pb-5 pb-lg-7">
+              <div class="card-hover card bg-dark text-white border-0">
+                <!-- retina cover basic structure -->
+                <div class="bg-stretch">
+                  <span data-srcset="images/photo01-small.jpg, images/photo01-small-2x.jpg 2x"></span>
+                  <span data-srcset="images/photo01-medium.jpg, images/photo01-medium-2x.jpg 2x" data-media="(min-width: 768px)"></span>
+                  <span data-srcset="images/photo01-large.jpg, images/photo01-large-2x.jpg 2x" data-media="(min-width: 1024px)"></span>
+                </div>
+                <div class="card-holder" data-fancybox data-type="ajax" data-src="inc/photo-gallery-landscape.html">
+                  <!-- Don't delete it. It is for set the size (height and width) and proportion of block with photo -->
+                  <img src="images/photo-fake-proportion.png" class="card-img rounded-0" alt="image description">
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="card-block">
+                      <span class="category text-uppercase">Boxing</span>
+                      <strong class="h4 card-title">Canelo Alvarez Young</strong>
+                      <p class="card-text">Uploaded by James</p>
+                      <time datetime="2016-05-07" class="card-text">May 7, 2016</time>
+                    </div>
+                    <div class="card-block text-uppercase text-center">
+                      <a href="#"><b>View this photo</b></a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-outline-light btn-light">Get your photo signed by Canelo</a>
+              </div>
+              <div class="card-hover card bg-dark text-white border-0">
+                <!-- retina cover basic structure -->
+                <div class="bg-stretch">
+                  <span data-srcset="images/photo02-small.jpg, images/photo02-small-2x.jpg 2x"></span>
+                  <span data-srcset="images/photo02-medium.jpg, images/photo02-medium-2x.jpg 2x" data-media="(min-width: 768px)"></span>
+                  <span data-srcset="images/photo02-large.jpg, images/photo02-large-2x.jpg 2x" data-media="(min-width: 1024px)"></span>
+                </div>
+                <div class="card-holder" data-fancybox data-type="ajax" data-src="inc/photo-gallery-portrait.html">
+                  <!-- Don't delete it. It is for set the size (height and width) and proportion of block with photo -->
+                  <img src="images/photo-fake-proportion.png" class="card-img rounded-0" alt="image description">
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="card-block">
+                      <span class="category text-uppercase">Figure Skating</span>
+                      <strong class="h4 card-title">Yuna Kim</strong>
+                      <p class="card-text">Uploaded by Santi</p>
+                      <time datetime="2016-03-07" class="card-text">March 7, 2016</time>
+                    </div>
+                    <div class="card-block text-uppercase text-center">
+                      <a href="#"><b>View this photo</b></a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-outline-light btn-light">Get your photo signed by Yuna</a>
+              </div>
+              <div class="card-hover card bg-dark text-white border-0">
+                <!-- retina cover basic structure -->
+                <div class="bg-stretch">
+                  <span data-srcset="images/photo03-small.jpg, images/photo03-small-2x.jpg 2x"></span>
+                  <span data-srcset="images/photo03-medium.jpg, images/photo03-medium-2x.jpg 2x" data-media="(min-width: 768px)"></span>
+                  <span data-srcset="images/photo03-large.jpg, images/photo03-large-2x.jpg 2x" data-media="(min-width: 1024px)"></span>
+                </div>
+                <div class="card-holder" data-fancybox data-type="ajax" data-src="inc/photo-gallery-portrait.html">
+                  <!-- Don't delete it. It is for set the size (height and width) and proportion of block with photo -->
+                  <img src="images/photo-fake-proportion.png" class="card-img rounded-0" alt="image description">
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="card-block">
+                      <span class="category text-uppercase">Dolor sit</span>
+                      <strong class="h4 card-title">Lorem Ipsum</strong>
+                      <p class="card-text">Uploaded by #Name</p>
+                      <time datetime="2016-03-07" class="card-text">March 7, 2016</time>
+                    </div>
+                    <div class="card-block text-uppercase text-center">
+                      <a href="#"><b>View this photo</b></a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-outline-light btn-light">Get your photo signed by #Name</a>
+              </div>
+              <div class="card-hover card bg-dark text-white border-0">
+                <!-- retina cover basic structure -->
+                <div class="bg-stretch">
+                  <span data-srcset="images/photo04-small.jpg, images/photo04-small-2x.jpg 2x"></span>
+                  <span data-srcset="images/photo04-medium.jpg, images/photo04-medium-2x.jpg 2x" data-media="(min-width: 768px)"></span>
+                  <span data-srcset="images/photo04-large.jpg, images/photo04-large-2x.jpg 2x" data-media="(min-width: 1024px)"></span>
+                </div>
+                <div class="card-holder" data-fancybox data-type="ajax" data-src="inc/photo-gallery-portrait.html">
+                  <!-- Don't delete it. It is for set the size (height and width) and proportion of block with photo -->
+                  <img src="images/photo-fake-proportion.png" class="card-img rounded-0" alt="image description">
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="card-block">
+                      <span class="category text-uppercase">Dolor sit</span>
+                      <strong class="h4 card-title">Lorem Ipsum</strong>
+                      <p class="card-text">Uploaded by #Name</p>
+                      <time datetime="2016-03-07" class="card-text">March 7, 2016</time>
+                    </div>
+                    <div class="card-block text-uppercase text-center">
+                      <a href="#"><b>View this photo</b></a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-outline-light btn-light">Get your photo signed by #Name</a>
+              </div>
+              <div class="card-hover card bg-dark text-white border-0">
+                <!-- retina cover basic structure -->
+                <div class="bg-stretch">
+                  <span data-srcset="images/photo05-small.jpg, images/photo05-small-2x.jpg 2x"></span>
+                  <span data-srcset="images/photo05-medium.jpg, images/photo05-medium-2x.jpg 2x" data-media="(min-width: 768px)"></span>
+                  <span data-srcset="images/photo05-large.jpg, images/photo05-large-2x.jpg 2x" data-media="(min-width: 1024px)"></span>
+                </div>
+                <div class="card-holder" data-fancybox data-type="ajax" data-src="inc/photo-gallery-portrait.html">
+                  <!-- Don't delete it. It is for set the size (height and width) and proportion of block with photo -->
+                  <img src="images/photo-fake-proportion.png" class="card-img rounded-0" alt="image description">
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="card-block">
+                      <span class="category text-uppercase">Dolor sit</span>
+                      <strong class="h4 card-title">Lorem Ipsum</strong>
+                      <p class="card-text">Uploaded by #Name</p>
+                      <time datetime="2016-03-07" class="card-text">March 7, 2016</time>
+                    </div>
+                    <div class="card-block text-uppercase text-center">
+                      <a href="#"><b>View this photo</b></a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-outline-light btn-light">Get your photo signed by #Name</a>
+              </div>
+              <div class="card-hover card bg-dark text-white border-0">
+                <!-- retina cover basic structure -->
+                <div class="bg-stretch">
+                  <span data-srcset="images/photo06-small.jpg, images/photo06-small-2x.jpg 2x"></span>
+                  <span data-srcset="images/photo06-medium.jpg, images/photo06-medium-2x.jpg 2x" data-media="(min-width: 768px)"></span>
+                  <span data-srcset="images/photo06-large.jpg, images/photo06-large-2x.jpg 2x" data-media="(min-width: 1024px)"></span>
+                </div>
+                <div class="card-holder" data-fancybox data-type="ajax" data-src="inc/photo-gallery-portrait.html">
+                  <!-- Don't delete it. It is for set the size (height and width) and proportion of block with photo -->
+                  <img src="images/photo-fake-proportion.png" class="card-img rounded-0" alt="image description">
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="card-block">
+                      <span class="category text-uppercase">Dolor sit</span>
+                      <strong class="h4 card-title">Lorem Ipsum</strong>
+                      <p class="card-text">Uploaded by #Name</p>
+                      <time datetime="2016-03-07" class="card-text">March 7, 2016</time>
+                    </div>
+                    <div class="card-block text-uppercase text-center">
+                      <a href="#"><b>View this photo</b></a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-outline-light btn-light">Get your photo signed by #Name</a>
+              </div>
+              <div class="card-hover card bg-dark text-white border-0">
+                <!-- retina cover basic structure -->
+                <div class="bg-stretch">
+                  <span data-srcset="images/photo07-small.jpg, images/photo07-small-2x.jpg 2x"></span>
+                  <span data-srcset="images/photo07-medium.jpg, images/photo07-medium-2x.jpg 2x" data-media="(min-width: 768px)"></span>
+                  <span data-srcset="images/photo07-large.jpg, images/photo07-large-2x.jpg 2x" data-media="(min-width: 1024px)"></span>
+                </div>
+                <div class="card-holder" data-fancybox data-type="ajax" data-src="inc/photo-gallery-portrait.html">
+                  <!-- Don't delete it. It is for set the size (height and width) and proportion of block with photo -->
+                  <img src="images/photo-fake-proportion.png" class="card-img rounded-0" alt="image description">
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="card-block">
+                      <span class="category text-uppercase">Dolor sit</span>
+                      <strong class="h4 card-title">Lorem Ipsum</strong>
+                      <p class="card-text">Uploaded by #Name</p>
+                      <time datetime="2016-03-07" class="card-text">March 7, 2016</time>
+                    </div>
+                    <div class="card-block text-uppercase text-center">
+                      <a href="#"><b>View this photo</b></a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-outline-light btn-light">Get your photo signed by #Name</a>
+              </div>
+              <div class="card-hover card bg-dark text-white border-0">
+                <!-- retina cover basic structure -->
+                <div class="bg-stretch">
+                  <span data-srcset="images/photo08-small.jpg, images/photo08-small-2x.jpg 2x"></span>
+                  <span data-srcset="images/photo08-medium.jpg, images/photo08-medium-2x.jpg 2x" data-media="(min-width: 768px)"></span>
+                  <span data-srcset="images/photo08-large.jpg, images/photo08-large-2x.jpg 2x" data-media="(min-width: 1024px)"></span>
+                </div>
+                <div class="card-holder" data-fancybox data-type="ajax" data-src="inc/photo-gallery-portrait.html">
+                  <!-- Don't delete it. It is for set the size (height and width) and proportion of block with photo -->
+                  <img src="images/photo-fake-proportion.png" class="card-img rounded-0" alt="image description">
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="card-block">
+                      <span class="category text-uppercase">Dolor sit</span>
+                      <strong class="h4 card-title">Lorem Ipsum</strong>
+                      <p class="card-text">Uploaded by #Name</p>
+                      <time datetime="2016-03-07" class="card-text">March 7, 2016</time>
+                    </div>
+                    <div class="card-block text-uppercase text-center">
+                      <a href="#"><b>View this photo</b></a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-outline-light btn-light">Get your photo signed by #Name</a>
+              </div>
+            </div>
+            <!-- To display the a.LOAD-MORE button delete class .INVISIBLE from parent container -->
+            <div class="invisible text-center py-2">
+              <a class="load-more text-uppercase" href="#"><i class="icon-arrow-down">&nbsp;</i> <b>load more</b></a>
+            </div>
+          </div>
+        </main>
+        <!-- footer of the page -->
+        <footer id="footer" class="py-3 py-lg-4 bg-dark text-white">
+          <div class="container-fluid">
+            <div class="row justify-content-center justify-content-sm-between">
+              <div class="col-md-6 order-md-2">
+                <ul class="footer-nav d-flex justify-content-around justify-content-md-end list-inline text-white mb-md-0">
+                  <li class="list-inline-item"><a href="#">About</a></li>
+                  <li class="list-inline-item"><a href="#">Terms</a></li>
+                  <li class="list-inline-item"><a href="#">Privacy</a></li>
+                  <li class="list-inline-item"><a href="#">Help</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 order-md-1 text-center text-md-left">
+                <p>Copyright &copy; 2017 <a href="#">Fangage, Inc.</a> All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="search-overlay">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <!-- Modals -->
+  <!-- Modal sign out -->
+  <div class="modal fade" id="modalSignOut" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content rounded-0">
+        <div class="modal-body">
+          <div class="strong h4">Are you sure you want to sign out?</div>
+        </div>
+        <div class="modal-footer pr-0">
+          <a href="#" data-dismiss="modal"><b>Cancel</b></a>
+          <button type="button" class="btn btn-danger text-uppercase">Sign out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

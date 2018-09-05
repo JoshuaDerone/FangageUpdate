@@ -1,0 +1,25 @@
+<div class="lighbox-container">
+  <div class="lighbox-header d-md-flex align-items-md-center justify-content-md-between mb-4">
+    <div class="card-block">
+      <span class="category text-uppercase">#category</span>
+      <strong class="h4 card-title">#Name</strong>
+      <p class="card-text">Uploaded by #Username</p>
+      <time datetime="2016-03-07" class="card-text">#Date signed</time>
+    </div>
+    <div class="card-block">
+      <a href="#" class="text-uppercase" data-fancybox-close>Close</a>
+      <a href="#" class="btn btn-outline-light btn-light">Get your photo signed by #Name</a>
+    </div>
+  </div>
+  <div class="lighbox-body">
+    <!-- picturefill: full manual control -->
+    <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+      <source srcset="images/photo01-full-small.jpg, images/photo01-full-small-2x.jpg 2x" media="(max-width: 767px)">
+      <source srcset="images/photo01-full-medium.jpg, images/photo01-full-medium-2x.jpg 2x" media="(max-width: 1024px)">
+      <source srcset="images/photo01-full-large.jpg, images/photo01-full-large-2x.jpg 2x">
+      <!--[if IE 9]></video><![endif]-->
+      <img src="photo01-full-large.jpg" class="card-img" alt="image description">
+    </picture>
+  </div>
+</div>
